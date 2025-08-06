@@ -1,0 +1,4 @@
+{
+  "change_avatar": "[data-qa=\"shop\"]",
+  "avatar": ".single_page_body_avatar_img"
+}

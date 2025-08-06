@@ -1,0 +1,9 @@
+{
+	"login":"USER_LOGIN",
+	"password":"USER_PASSWORD",
+	"card_number": "4003600000000014",
+	"card_actual": "10/30",
+	"card_cvv": "125",
+	"card_name": "TEST TEST",
+	"secure_code": "56456"
+}
