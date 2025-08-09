@@ -8,7 +8,9 @@ import * as payment_page from "../locators/payment_page.json"
 describe('Покупка аватара', function () {
 
    it('Покупка аватара', function () {
+    let oldAvatarUrl;
     cy.visit('/');
+    cy.wait(2000);
     cy.get(login_page.email).type(data.login);
     cy.get(login_page.password).type(data.password);
     cy.wait(2000);
@@ -25,7 +27,7 @@ describe('Покупка аватара', function () {
     cy.get(payment_page.card_actual).type(data.card_actual);
     cy.get(payment_page.card_cvv).type(data.card_cvv);
     cy.get(payment_page.card_name).type(data.card_name);
-    cy.wait(2000);
+    cy.wait(4000);
     cy.get(payment_page.pay_button).click();   //Кнопка "Оплатить"
 
     cy.get(payment_page.secure_code).type(data.secure_code);
